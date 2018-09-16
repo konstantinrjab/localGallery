@@ -17,9 +17,7 @@ if (is_dir($path)) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
@@ -51,11 +49,11 @@ if (is_dir($path)) {
 	    </a>
 	</div>
 
-	<div class="container mt-4">
+	<div class="container mt-4 gallery">
 	    <div class="row">
 	        <?php foreach ($images as $i => $image) : ?>
 	            <div class="col-sm-6 col-lg-3">
-	                <img id="<?= $i ?>" class="d-block w-100" src="<?= $image; ?>" onclick="toCarousel(this)">
+	                <img id="<?= $i ?>" class="d-block w-100" src="<?= $image; ?>">
 	            </div>
 	        <?php endforeach; ?>
 	    </div>

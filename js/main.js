@@ -1,11 +1,13 @@
-$('.carousel').carousel({
-    interval: false,
-    pause: "false"
-});
+$(document).ready(function () {
 
-function toCarousel(img) {
-    console.log(img.src);
-    $('.active').removeClass('active');
-    $('#'+img.id+'_carousel').closest('div').addClass('active');
-    window.scrollTo(0, 0);
-}
+	$('.carousel').carousel({
+	    interval: false,
+	    pause: "false"
+	});
+
+	$('.gallery img').click(function () {
+	    $('.active').removeClass('active');
+	    $('#'+this.id+'_carousel').closest('div').addClass('active');
+	    window.scrollTo(0, 0);
+	})
+});
