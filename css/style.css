@@ -3,7 +3,9 @@
     transition: transform 0.2s ease;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
-.carousel-item-child {
-	height: 100vh;
-	margin: auto;
+
+img.carousel-item-child {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
